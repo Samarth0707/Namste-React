@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namste react</title>
+</head>
+<body>
+
+  
+  <script>
+
+function fetchData(callback) {
+  setTimeout(() => {
+    console.log("Data fetched");
+    callback();
+  }, 2000);  // Simulate a 2-second delay
+}
+
+function displayData() {
+  console.log("Displaying data");
+}
+
+console.log("Start fetching data");
+fetchData(displayData);  // The displayData function is passed as a callback
+console.log("End of script");
+
+
+  </script>
+ 
+</body>
+</html>
